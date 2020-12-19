@@ -159,6 +159,30 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/excel',
+    component: Layout,
+    redirect: '/excel/export-excel',
+    name: 'excel',
+    meta: {
+      title: 'excel',
+      icon: 'excel'
+    },
+    children: [
+      {
+        path: 'export-excel',
+        component: () => import('@/views/excel/ExportExcel'),
+        name: 'ExportExcel',
+        meta: { title: '表格一' }
+      },
+      {
+        path: 'export-excel-2',
+        component: () => import('@/views/excel/ExportExcel2'),
+        name: 'ExportExcel2',
+        meta: { title: '表格二' }
+      }
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
