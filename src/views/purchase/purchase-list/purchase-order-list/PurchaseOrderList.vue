@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>wo shi biao ge 2</h1>
+    <h1>我是采购订单列表页面</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ExportExcel2'
+  name: 'PurchaseOrderList'
 }
 </script>
 
